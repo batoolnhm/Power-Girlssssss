@@ -1,1 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Athar | أثر</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css.css" />
+</head>
+<body dir="rtl">
+    
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="nav-logo">
+                <div class="logo-container">
+                    <i class="fas fa-star logo-icon"></i>
+                    <h2 class="logo-text">أثَر</h2>
+                </div>
+</a>
+
+            <ul class="nav-links">
+                <button id="nav-close-btn" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#homepage" class="nav-link"><b>الصفحة الرئيسية</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link"><b>من نحن؟</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clubs" class="nav-link"><b>الأندية والفرق الطلابية</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#events" class="nav-link"><b>فعالياتنا القادمة</b></a>
+                </li>      
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link"><b>أثر بالصورة</b></a>
+                </li>   
+                <li class="nav-item">
+                    <a href="test.html" class="nav-link"><b>انضم لمجتمعنا</b></a>
+                </li>
+                <li class="nav-item">
+                    <a href="test.html" class="nav-link"><b>تسجيل الدخول</b></a>
+            </ul>
+
+            <button id="nav-open-btn" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section" id="homepage">
+            <div class="section-content">
+                <div class="hero-content">
+                    <h2 class="hero-title">أثر | منصة طلابية</h2>
+                    <h3 class="hero-subtitle">مشوار الألف ميل يبدأ من هنا!</h3>
+                    <p class="hero-desc">منصة طلابية بتجمع الفعاليات، الأندية، والمبادرات الجامعية بمكان واحد، عشان تعيش تجربتك الجامعية بمتعة، مشاركة، وتأثير حقيقي.</p>
+                    <div class="hero-btns">
+                        <a href="#about" class="btn btn-primary">اكتشف أثر</a>
+                        <a href="test.html" class="btn btn-secondary">انضم لمجتمعنا</a>
+                    </div>
+                </div> 
+                <div class="hero-img"> 
+                    <img src="1.png" alt="طلاب جامعيين" class="hero-image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-img">
+                    <img src="4.png" alt="عن أثر" class="about-image" />
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title"><b>من نحن؟</b></h2>
+                    <p class="about-text"><b>نحن منصّة طلابية أُنشئت من طلاب ولأجل الطلاب. فكرتنا بسيطة: نسهّل عليك الوصول لكل الأنشطة والجمعيات الطلابية بمكان واحد. من خلال منصّتنا بتقدر تتابع الفعاليات، تعرف تفاصيلها، وتسجّل بسهولة، بدون تعب ولا تضييع وقت. هدفنا نخلّي تجربتك الجامعية أكثر تفاعل ومتعة.</b></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clubs Section -->
+        <section class="clubs-section" id="clubs">
+            <h2 class="section-title">الأندية والفرق الطلابية</h2>
+            <div class="section-content">
+                <div class="clubs-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="club-card swiper-slide" data-club-id="1">
+                            <img src="ehnanajah.jpg" alt="احنا النجاح" class="club-image" />
+                            <h3 class="club-name">احنا النجاح</h3>
+                            <p class="club-tagline">تطوع • تدريب • تطوير</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="2">
+                            <img src="ASCE.png" alt="ASCE" class="club-image" />
+                            <h3 class="club-name">ASCE</h3>
+                            <p class="club-tagline">نبني مستقبل الهندسة المدنية معًا!</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="3">
+                            <img src="LRC1.jpg" alt="LRC" class="club-image" />
+                            <h3 class="club-name">مركز الموارد اللغات</h3>
+                            <p class="club-tagline">تجربة حقيقية لتعلّم اللغة مع متحدثين أصليين</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="4">
+                            <img src="ain11.jpg" alt="AIN" class="club-image" />
+                            <h3 class="club-name">عين</h3>
+                            <p class="club-tagline">جمعية طلابية شبابية تهدف لتعزيز روح الابتكار لأعضاءها.</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="5">
+                            <img src="sdgs.jpg" alt="Sdgs" class="club-image" />
+                            <h3 class="club-name">جمعية التنمية المستدامة</h3>
+                            <p class="club-tagline">يدًا بيد نحو مستقبل مستدام</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="6">
+                            <img src="rr.png" alt="جمعية الرياديين" class="club-image" />
+                            <h3 class="club-name">جمعية الرياديين</h3>
+                            <p class="club-tagline">بدك تصنع فرق؟ بلّش معنا وخلي فكرتك تكبر!</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="7">
+                            <img src="sapa.jpeg" alt="SAPA" class="club-image" />
+                            <h3 class="club-name">SAPA</h3>
+                            <p class="club-tagline">انضم لإشي مختلف... إشي بيجمع بين العلم، الإبداع، والعمل الجماعي.</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="8">
+                            <img src="lw.png" alt="جمعية القانون" class="club-image" />
+                            <h3 class="club-name">جمعية القانون</h3>
+                            <p class="club-tagline">اسمع، ناقش، أثّر.</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="9">
+                            <img src="tr.jpg" alt="جمعية الترجمة" class="club-image" />
+                            <h3 class="club-name">جمعية الترجمة</h3>
+                            <p class="club-tagline">حيث تلتقي اللغات.</p>
+                        </div>
+                        <div class="club-card swiper-slide" data-club-id="10">
+                            <img src="IMECH.png" alt="IMECH" class="club-image" />
+                            <h3 class="club-name">IMECH</h3>
+                            <p class="club-tagline">حيث يبدأ الشغف ويستمر الأثر.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events section -->
+        <section class="events-section" id="events">
+            <h2 class="section-title">الفعاليات والأنشطة الجامعية</h2>
+            <div class="section-content">
+                <div class="events-grid">
+                    <div class="event-card" onclick="openEvent(1)">
+                        <img src="language.jpg" alt="اليوم المفتوح للغات" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">اليوم المفتوح للغات</h3>
+                            <p class="event-org">مركز الموارد التعليمية للغات</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(2)">
+                        <img src="expo.jpg" alt="TEDI-NAJAH EXPO" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">TEDI-NAJAH EXPO</h3>
+                            <p class="event-org">جامعة النجاح الوطنية</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(3)">
+                        <img src="coe.jpg" alt="لقاء ريادة الأعمال" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">لقاء ريادة الأعمال</h3>
+                            <p class="event-org">جمعية الرياديين</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(4)">
+                        <img src="vc.jpg" alt="Venture Cafe Series" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">Venture Cafe Series</h3>
+                            <p class="event-org">حديقة النجاح للإبتكار</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(5)">
+                        <img src="nasa.jpg" alt="لقاء SAPA" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">لقاء SAPA</h3>
+                            <p class="event-org">جمعية SAPA</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(6)">
+                        <img src="football.jpg" alt="مباراة كرة قدم" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">مباراة كرة قدم</h3>
+                            <p class="event-org">كلية القانون</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(7)">
+                        <img src="green.jpg" alt="بناء القدرات الخضراء" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">بناء القدرات الخضراء</h3>
+                            <p class="event-org">جمعية التنمية المستدامة</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(8)">
+                        <img src="lawtrans.jpg" alt="الترجمة القانونية" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">الترجمة القانونية</h3>
+                            <p class="event-org">جمعية الترجمة</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(9)">
+                        <img src="civilengg.jpg" alt="تحدي الجسور" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">تحدي الجسور</h3>
+                            <p class="event-org">الهندسة المدنية</p>
+                        </div>
+                    </div>
+                    <div class="event-card" onclick="openEvent(10)">
+                        <img src="mech.jpg" alt="الرحلة الهندسية" class="event-img">
+                        <div class="event-info">
+                            <h3 class="event-name">الرحلة الهندسية</h3>
+                            <p class="event-org">IMechE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">نبذة عن فعاليات جامعية سابقة</h2>
+            <div class="section-content">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="lrc.jpeg" alt="فعالية مركز اللغات" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="sport.jpeg" alt="فعالية رياضية" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="b.jpeg" alt="فعالية جامعية" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="game.jpeg" alt="فعالية ألعاب" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="law.jpeg" alt="فعالية قانونية" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="ain.jpeg" alt="فعالية عين" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="a.jpg" alt="فعالية جامعية" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="t.jpg" alt="فعالية ترجمة" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="s.jpg" alt="فعالية علمية" class="gallery-img" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="f.jpg" alt="فعالية جامعية" class="gallery-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Athar | أثر</p>
+                <p class="policy-links">
+                    <a href="#" class="policy-link">سياسة الخصوصية</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="policy-link">سياسة الاسترجاع</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Event Popup -->
+    <!-- Event Popup -->
+<div id="eventPopup" class="event-popup">
+    <div class="popup-content">
+        <button class="popup-close-btn">&times;</button>
+        <div class="popup-header">
+            <img id="popupEventImg" src="" alt="صورة الفعالية" class="popup-img">
+        </div>
+        <div class="popup-body">
+            <h2 id="popupEventTitle">اسم الفعالية</h2>
+            <div class="event-org">
+                <i class="fas fa-university"></i>
+                <span id="popupEventOrg">الجهة المنظمة</span>
+            </div>
+            
+            <!-- NEW: Event details section -->
+            <div class="event-details">
+                <div class="detail-item">
+                    <i class="fas fa-calendar-day"></i>
+                    <div class="detail-content">
+                        <span class="detail-label">اليوم:</span>
+                        <span id="popupEventDay" class="detail-value">السبت</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div class="detail-content">
+                        <span class="detail-label">التاريخ:</span>
+                        <span id="popupEventDate" class="detail-value">15 مارس 2025</span>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="detail-content">
+                        <span class="detail-label">المكان:</span>
+                        <span id="popupEventLocation" class="detail-value">مبنى مركز اللغات</span>
+                    </div>
+                </div>
+            </div>
+            
+            <p id="popupEventDesc" class="event-desc">وصف الفعالية...</p>
+            <div class="popup-actions">
+                <a href="#" id="eventRegisterLink" class="btn btn-register" target="_blank">
+                    <i class="fas fa-user-plus"></i> سجل الآن
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Club Popup -->
+    <div id="clubPopup" class="club-popup">
+        <div class="popup-content">
+            <button class="popup-close-btn">&times;</button>
+            <div class="popup-header">
+                <img id="popupClubImg" src="" alt="صورة النادي" class="popup-img">
+            </div>
+            <div class="popup-body">
+                <h2 id="popupClubName">اسم النادي</h2>
+                <div class="club-info">
+                    <div class="info-block">
+                        <h3><i class="fas fa-info-circle"></i> نبذة عن النادي</h3>
+                        <p id="popupClubDesc">وصف النادي...</p>
+                    </div>
+                    <div class="info-block">
+                        <h3><i class="fas fa-calendar-alt"></i> الأنشطة والفعاليات</h3>
+                        <p id="popupClubActivities">الأنشطة...</p>
+                    </div>
+                    <div class="info-block">
+                        <h3><i class="fas fa-envelope"></i> معلومات التواصل</h3>
+                        <p id="popupClubContact">معلومات التواصل...</p>
+                    </div>
+                </div>
+                <div class="popup-actions">
+                    <a href="#" id="clubRegisterLink" class="btn btn-register" target="_blank">
+                        <i class="fas fa-user-plus"></i> انضم للنادي
+                    </a>
+                    <button class="btn btn-share" onclick="shareClub()">
+                        <i class="fas fa-share-alt"></i> شارك مع صديق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
 
