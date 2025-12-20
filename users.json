@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1766239764150,
+    "name": "jane doe",
+    "email": "example@najah.edu",
+    "password": "$2b$10$WUV.LkiCvxrFSSjDnEVwje//MSivyyL5JphACKKJPXr77pIwu0s9O",
+    "major": "Marketing"
+  },
+  {
+    "id": 1766241761562,
+    "name": "Tala",
+    "email": "tala@najah.edu",
+    "password": "$2b$10$fE59Smdyj983uFXYPLdtSuV2tl2KFxTBEjK7aywRo9AGJXz.kvocO",
+    "major": "CS"
+  },
+  {
+    "id": 1766252132614,
+    "name": "amalmaher",
+    "email": "amalmaher@najah.edu",
+    "password": "$2b$10$/yy4ZRQCkE5cXOMMsaJsce0bJwjfMso18TItFKJ/C/7FMbDc2yADO",
+    "major": "marketing"
+  },
+  {
+    "id": 1766252368767,
+    "name": "zeina",
+    "email": "zenia@najah.edu",
+    "password": "$2b$10$DpqXo6IG1MLc2Q.Ov4y6/OnUIxaRmZfr2p2.8V1riw8qnLSq407Du",
+    "major": "Bi"
+  },
+  {
+    "id": 1766255144543,
+    "name": "batool",
+    "email": "batool@gmail.com",
+    "password": "$2b$10$VZIFAiSsZKu9PQfQwgZvYeT3GBTpCV5adJ9MK4tseYPLwuuPhVNrq",
+    "major": "marketing"
+  }
+]

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول | أثر</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+ 
+    .registration-body {
+      background: linear-gradient(135deg, #02462e, #f3961c);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .auth-card {
+      width: 340px;
+      background:#fff;
+      padding: 26px 22px;
+      border-radius:18px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.14);
+      animation: fadeUp .7s ease;
+    }
+
+    @keyframes fadeUp { from{opacity:0; transform:translateY(40px);} }
+
+    .auth-card h2 {
+      text-align:center;
+      font-size: 1.9rem;
+      font-weight:800;
+      color: #02462e;
+      margin-bottom:6px;
+    }
+
+    .subtitle {
+      text-align:center;
+      font-size:.95rem;
+      color:#505050;
+      margin-bottom:26px;
+    }
+
+    .input-field {
+      display:flex;
+      flex-direction:column;
+      margin-bottom:18px;
+    }
+
+    .input-field label {
+      font-size: .9rem;
+      color:#303030;
+      margin-bottom:6px;
+      font-weight:600;
+    }
+
+    .input-field input {
+      padding:14px;
+      border-radius:12px;
+      border:2px solid #dfdfdf;
+      font-size:1rem;
+      transition:.25s ease;
+      outline:none;
+    }
+
+    .input-field input:focus {
+      border-color:#02462e;
+      box-shadow:0 0 0 3px rgba(66, 189, 139, 0.25);
+    }
+
+    .submit-btn {
+      width:100%;
+      background:#02462e;
+      border:none;
+      padding:14px;
+      color:#fff;
+      border-radius:14px;
+      font-size:1.1rem;
+      cursor:pointer;
+      transition:.28s ease;
+      margin-top:10px;
+      font-weight:700;
+    }
+
+    .submit-btn:hover { background:#034f32; }
+
+    .auth-switch {
+      text-align:center;
+      margin-top:18px;
+      font-size:.95rem;
+    }
+
+    .auth-switch a {
+      color:#f39c12;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    .form-switch {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .form-switch-btn {
+      padding: 8px 20px;
+      background: #f0f0f0;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .form-switch-btn.active {
+      background: #02462e;
+      color: white;
+    }
+
+    .auth-form {
+      display: none;
+    }
+
+    .auth-form.active {
+      display: block;
+    }
+
+    @media (max-width:480px) {
+      .auth-card { padding:30px 22px; width:100%; }
+      .auth-card h2 { font-size:1.6rem; }
+    }
+  </style>
+</head>
+
+<body class="registration-body" dir="rtl">
+  <div class="auth-card">
+    <h2 id="cardTitle">تسجيل الدخول</h2>
+    <p class="subtitle" id="cardSubtitle">أهلاً بعودتك! 👋</p>
+
+    <div class="form-switch">
+      <button class="form-switch-btn active" id="loginTabBtn">تسجيل الدخول</button>
+      <button class="form-switch-btn" id="registerTabBtn">إنشاء حساب</button>
+    </div>
+
+    <form id="loginForm" class="auth-form active">
+      <div class="input-field">
+        <label>الإيميل الجامعي</label>
+        <input type="email" id="loginEmail" placeholder="example@najah.edu" required>
+      </div>
+
+      <div class="input-field">
+        <label>كلمة السر</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" required>
+      </div>
+
+      <div class="input-field">
+        <a href="#" style="font-size: 0.85rem; color: #02462e; text-align: left;">نسيت كلمة السر؟</a>
+      </div>
+
+      <button class="submit-btn" type="submit">تسجيل الدخول</button>
+    </form>
+
+    
+    <form id="registerForm" class="auth-form">
+      <div class="input-field">
+        <label>الاسم الكامل</label>
+        <input type="text" id="fullname" required>
+      </div>
+
+      <div class="input-field">
+        <label>الإيميل الجامعي</label>
+        <input type="email" id="email" placeholder="example@najah.edu" required>
+      </div>
+
+      <div class="input-field">
+        <label>كلمة السر</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+      </div>
+
+      <div class="input-field">
+        <label>التخصص</label>
+        <input type="text" id="major" placeholder="Business Intelligence, Marketing, Engineering.." required>
+      </div>
+
+      <button class="submit-btn" type="submit">إنشاء الحساب</button>
+    </form>
+
+   
+  </div>
+
+  <script>
+    const loginTabBtn = document.getElementById('loginTabBtn');
+    const registerTabBtn = document.getElementById('registerTabBtn');
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+    const cardTitle = document.getElementById('cardTitle');
+    const cardSubtitle = document.getElementById('cardSubtitle');
+
+    loginTabBtn.addEventListener('click', function() {
+      loginTabBtn.classList.add('active');
+      registerTabBtn.classList.remove('active');
+      
+      loginForm.classList.add('active');
+      registerForm.classList.remove('active');
+      
+      cardTitle.textContent = 'تسجيل الدخول';
+      cardSubtitle.textContent = 'أهلاً بعودتك! 👋';
+    });
+
+    registerTabBtn.addEventListener('click', function() {
+      registerTabBtn.classList.add('active');
+      loginTabBtn.classList.remove('active');
+      
+      registerForm.classList.add('active');
+      loginForm.classList.remove('active');
+      
+      cardTitle.textContent = 'إنشاء حساب جديد';
+      cardSubtitle.textContent = 'ابدأ رحلتك الجامعية بشكل مختلف ✨';
+    });
+
+   loginForm.addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById('loginEmail').value.trim();
+  const password = document.getElementById('loginPassword').value;
+
+  if (!email || !password) {
+    alert('⚠️ الرجاء تعبئة جميع الحقول المطلوبة');
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:3000/api/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email, password })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      alert(data.message || "فشل تسجيل الدخول");
+      return;
+    }
+
+    alert(" تم تسجيل الدخول بنجاح");
+
+    localStorage.setItem("user", JSON.stringify(data.user));
+
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1000);
+
+  } catch (error) {
+    alert("Error!");
+    console.error(error);
+  }
+});
+
+
+   registerForm.addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('fullname').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+  const major = document.getElementById('major').value.trim();
+
+  if (!name || !email || !password || !major) {
+    alert('⚠️ الرجاء تعبئة جميع الحقول المطلوبة');
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:3000/api/auth/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ name, email, password, major })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      alert(data.message || "فشل إنشاء الحساب");
+      return;
+    }
+
+    alert(" تم إنشاء الحساب بنجاح! يمكنك تسجيل الدخول الآن");
+
+    registerForm.reset();
+
+    setTimeout(() => {
+      loginTabBtn.click();
+    }, 800);
+
+  } catch (error) {
+    alert("Error!");
+    console.error(error);
+  }
+});
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const action = urlParams.get('action');
+    
+    if (action === 'login') {
+      loginTabBtn.click(); 
+    }
+  </script>
+</body>
+</html>
